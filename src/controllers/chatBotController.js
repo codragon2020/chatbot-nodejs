@@ -1,4 +1,5 @@
 require("dotenv").config();
+import request from "request";
 
 // This code creates a /webhook endpoint that accepts POST requests, checks the request is a webhook event, then parses the message. This endpoint is where the Messenger Platform will send all webhook events.
 let postWebhook = (req, res) => {
