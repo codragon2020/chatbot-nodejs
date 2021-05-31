@@ -191,7 +191,7 @@ function handleMessage(sender_psid, message) {
        }
        if(entityChosen === "wit$thanks"){
            //send thanks message
-           callSendAPI(sender_psid,`You 're welcome!`);
+           callSendAPI(sender_psid,`You're welcome!`);
        }
         if(entityChosen === "wit$bye"){
             //send bye message
