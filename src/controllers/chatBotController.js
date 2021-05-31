@@ -214,14 +214,14 @@ let callSendAPIWithTemplate = (sender_psid) => {
                     "template_type": "generic",
                     "elements": [
                         {
-                            "title": "Want to build sth awesome?",
+                            "title": "Want to see more awesome stuff?",
                             "image_url": "https://www.nexmo.com/wp-content/uploads/2018/10/build-bot-messages-api-768x384.png",
-                            "subtitle": "Watch more videos on my youtube channel ^^",
+                            "subtitle": "Go to my portfolio to see more!",
                             "buttons": [
                                 {
                                     "type": "web_url",
-                                    "url": "https://bit.ly/subscribe-haryphamdev",
-                                    "title": "Watch now"
+                                    "url": "https://jmcginthyportfolio.netlify.app",
+                                    "title": "Go Now"
                                 }
                             ]
                         }
