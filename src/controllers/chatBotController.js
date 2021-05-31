@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 // This code creates a /webhook endpoint that accepts POST requests, checks the request is a webhook event, then parses the message. This endpoint is where the Messenger Platform will send all webhook events.
 let postWebhook = (req, res) => {
   // Parse the request body from the POST
@@ -35,7 +37,7 @@ let postWebhook = (req, res) => {
 // This code adds support for the Messenger Platform's webhook verification to your webhook. This is required to ensure your webhook is authentic and working.
 let getWebhook = (req, res) => {
   // Your verify token. Should be a random string.
-  let VERIFY_TOKEN = "justaverifytoken123456";
+  let VERIFY_TOKEN = process.env.MY_VERIFY_FB_TOKEN;
 
   // Parse the query params
   let mode = req.query["hub.mode"];
